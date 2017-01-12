@@ -1,0 +1,7 @@
+---
+:base_path: "/var/gemstash"
+:bind: tcp://0.0.0.0:<%= ENV["PORT"] %>
+:protected_fetch: true
+:db_adapter: postgres
+:db_url: <%= ENV["DATABASE_URL"] %>
+

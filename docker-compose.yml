@@ -1,0 +1,15 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:latest
+    expose:
+      - "5432"
+  gemstash:
+    build: .
+    environment:
+      DATABASE_URL: postgres://postgres@db
+      PORT: 9292
+    ports:
+      - 9292:9292
+    links:
+      - 'postgres:db'
