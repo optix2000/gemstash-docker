@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/bundler/gemstash.git
-  revision: b56d73bde817734017ea73a886f7eca7de7bfd15
-  ref: b56d73bde817734017ea73a886f7eca7de7bfd15
+  revision: a5a78e2a771abde965cff0be84d5cbcc5e1a93b8
+  ref: a5a78e2a771abde965cff0be84d5cbcc5e1a93b8
   specs:
-    gemstash (1.0.3)
+    gemstash (1.0.4)
       activesupport (>= 4.2, < 6)
       dalli (~> 2.7)
       faraday (~> 0.9)
@@ -11,6 +11,7 @@ GIT
       lru_redux (~> 1.1)
       puma (~> 2.14)
       sequel (~> 4.26)
+      server_health_check-rack (~> 0.1)
       sinatra (~> 1.4)
       sqlite3 (~> 1.3)
       thor (~> 0.19)
@@ -18,36 +19,39 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.1)
+    activesupport (5.1.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    concurrent-ruby (1.0.4)
+    concurrent-ruby (1.0.5)
     dalli (2.7.6)
-    faraday (0.10.1)
+    faraday (0.12.1)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.10.1)
+    faraday_middleware (0.11.0.1)
       faraday (>= 0.7.4, < 1.0)
-    i18n (0.7.0)
+    i18n (0.8.4)
     lru_redux (1.1.0)
-    minitest (5.10.1)
+    minitest (5.10.2)
     multipart-post (2.0.0)
-    pg (0.18.4)
+    pg (0.20.0)
     puma (2.16.0)
-    rack (1.6.5)
+    rack (1.6.8)
     rack-protection (1.5.3)
       rack
-    sequel (4.42.1)
-    sinatra (1.4.7)
+    sequel (4.47.0)
+    server_health_check (1.0.2)
+    server_health_check-rack (0.1.0)
+      server_health_check (~> 1.0, >= 1.0.1)
+    sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     sqlite3 (1.3.13)
     thor (0.19.4)
-    thread_safe (0.3.5)
-    tilt (2.0.5)
-    tzinfo (1.2.2)
+    thread_safe (0.3.6)
+    tilt (2.0.7)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -58,4 +62,4 @@ DEPENDENCIES
   pg (~> 0.18)
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
